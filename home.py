@@ -1270,6 +1270,7 @@ class DataEntryForm(QWidget):
         #                       "Public transportation": 60.0, "Coffee": 90.5}
 
         # DATA DO PEDIDO
+        # DATA DO PEDIDO
         d = QDate.currentDate()
         dataAtual = d.toString(Qt.ISODate)
         data_pedido = str(dataAtual)
