@@ -1389,17 +1389,10 @@ class DataEntryForm(QWidget):
         self.buttongerar.setMinimumHeight(40)
         self.buttongerar.setEnabled(False)
 
-      
-        # self.butotnCupon.setIcon(QIcon("Icones/impressora.png"))
-        # self.butotnCupon.setIconSize(QSize(40, 40))
-        # self.butotnCupon.setMinimumHeight(40)
-        # # self.butotnCupon.setEnabled(False)
-
         self.buttonQuit = QPushButton("Sair  ", self)
         self.buttonQuit.setIcon(QIcon("Icones/sair.png"))
         self.buttonQuit.setIconSize(QSize(40, 40))
         self.buttonQuit.setMinimumHeight(40)
-
         
         self.layoutRight.addWidget(self.buttonAdd)
         self.layoutRight.addWidget(self.buttongerar)
@@ -1416,7 +1409,6 @@ class DataEntryForm(QWidget):
         self.buttonQuit.clicked.connect(lambda: self.hide())
         self.buttonClear.clicked.connect(self.reset_table)
         self.buttonClearOne.clicked.connect(self.excluir_dados)
-        # self.butotnCupon.clicked.connect(self.cupom)
         self.buttongerar.clicked.connect(self.gerar)
         self.buttonAdd.clicked.connect(self.add_entry)
         self.butonAbrirCaixa.clicked.connect(self.abrircaixa)
